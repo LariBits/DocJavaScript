@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentação Técnica Js</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <nav id="navbar">
+    <a class="nav-link" href="index.html">Introdução</a>
+    <a class="nav-link" href="ondeir.html">Onde ir</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introducao">
+      <header>Introdução ao JavaScript</header>
+      <p>JavaScript é a linguagem de programação da web.</p>
+      <p>Ele pode atualizar e alterar tanto HTML quanto CSS.</p>
+
+      <h2>Por que estudar JavaScript?</h2>
+      <p>JavaScript é uma das 3 linguagens que todos os desenvolvedores web devem aprender:</p>
+      <ul>
+        <li>HTML para definir o conteúdo das páginas da web</li>
+        <li>CSS para especificar o layout das páginas da web</li>
+        <li>JavaScript para programar o comportamento de páginas web</li>
+      </ul>
+
+      <h2>JavaScript pode alterar o conteúdo HTML</h2>
+      <p>Um dos muitos métodos JavaScript HTML é <code>getElementById()</code>.</p>
+      <p>Exemplo:</p>
+      <code>document.getElementById("demo").innerHTML = "Hello JavaScript";</code>
+
+      <h2>JavaScript pode alterar valores de atributos HTML</h2>
+      <p>Exemplo com imagem:</p>
+
+      <div class="lamp">
+        <p>JavaScript consegue mudar atributos do HTML</p>
+        <p>Neste caso, o JavaScript mudou o valor de <code>src</code> de uma imagem.</p>
+        <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Ligar</button>
+        <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+        <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Desligar</button>
+      </div>
+      <div class="botaosaiba">
+            <button onclick="window.open('https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb', '_blank')">Tente também!</button>
+      </div>
+
+      <p>Você pode aprender mais sobre JavaScript nos seguintes sites:</p>
+      <ul>
+        <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools JavaScript Tutorial</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">MDN Web Docs - JavaScript</a></li>
+        <li><a href="https://javascript.info/" target="_blank">JavaScript.info</a></li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
