@@ -7,7 +7,7 @@ O conteúdo aborda temas como:
 - Eventos
 - Funções
 
-## 📌 Objetivo
+## Objetivo
 
 Atender aos requisitos do projeto de **Documentação Técnica** proposto no curso, com foco em:
 
@@ -15,13 +15,13 @@ Atender aos requisitos do projeto de **Documentação Técnica** proposto no cur
 - Estilização com CSS
 - Pequenos exemplos práticos de JavaScript
 
-## ⚠️ Aviso Importante
+## Aviso Importante
 
 Este projeto é de caráter **acadêmico**, feito para fins **educacionais**, e pode conter **erros conceituais ou técnicos**.
 
 **Não deve ser considerado uma fonte oficial de consulta.**
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - HTML5
 - CSS3
