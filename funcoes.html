@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funções em JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>JS Documentation</header>
+    <a class="nav-link" href="index.html">Introdução</a>
+    <a class="nav-link" href="eventos.html">Eventos</a>
+    <a class="nav-link" href="funcoes.html">Funções</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Funcoes">
+      <header>Funções</header>
+
+      <p>Funções são blocos de código reutilizáveis em JavaScript.</p>
+      <p>Elas ajudam a organizar melhor o código e evitar repetições.</p>
+      <p>Uma função pode receber parâmetros e retornar valores.</p>
+
+      <h2>Exemplo de função simples:</h2>
+      <code>
+        function saudacao() { <br>
+          alert("Olá, Mundo!"); <br>
+        }
+      </code>
+      <br>
+      <button onclick="saudacao()">Clique para saudar</button>
+
+      <h2>Função com Parâmetro:</h2>
+      <code>
+        function mostrarMensagem(nome) { <br>
+          alert("Olá, " + nome + "!"); <br>
+        }
+      </code>
+      <br>
+      <button onclick="mostrarMensagem('Amigo')">Saudar Amigo</button>
+
+      <h2>Função com Retorno:</h2>
+      <code>
+        function soma(a, b) { <br>
+          return a + b; <br>
+        }
+      </code>
+      <p>Exemplo de uso: <code>console.log(soma(3, 4));</code></p>
+
+      <h2>Função Arrow:</h2>
+      <code>
+        const multiplica = (x, y) => x * y; <br>
+        console.log(multiplica(2, 5)); // Resultado: 10
+      </code>
+
+      <h2>Lista de Tipos de Funções:</h2>
+      <ul>
+        <li>Funções Nomeadas</li>
+        <li>Funções Anônimas</li>
+        <li>Funções Arrow</li>
+        <li>Funções como Expressão</li>
+        <li>Funções com Retorno</li>
+      </ul>
+
+      <script>
+        function saudacao() {
+          alert("Olá, Mundo!");
+        }
+
+        function mostrarMensagem(nome) {
+          alert("Olá, " + nome + "!");
+        }
+
+        function soma(a, b) {
+          return a + b;
+        }
+
+        const multiplica = (x, y) => x * y;
+      </script>
+
+      <p>Funções são fundamentais em qualquer aplicação JavaScript!</p>
+
+    </section>
+  </main>
+
+</body>
+</html>

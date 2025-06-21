@@ -1,59 +1,134 @@
+/* ---------- ESTILO GLOBAL ---------- */
 body {
   background-color: #ffffff;
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  line-height: 1.6;
 }
 
+/* ---------- NAVBAR LATERAL FIXA ---------- */
 #navbar {
-  display: flex;
-  flex-direction: row;
-  background-color: #cbcbcb;
-  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh; /* Toda a altura da tela */
+  background-color: #f5f5f5;
+  border-right: 1px solid #ccc;
+  padding: 20px 10px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+#navbar header {
+  font-weight: bold;
+  font-size: 24px;
   margin-bottom: 20px;
-  border: none;
+  text-align: center;
 }
 
 .nav-link {
-  color: black;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  color: #333;
   text-decoration: none;
-  margin-right: 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-link:hover {
-  text-decoration: underline;
+  background-color: #2fd1f6;
+  color: #fff;
+}
+
+/* ---------- CONTEÚDO PRINCIPAL ---------- */
+#main-doc {
+  margin-left: 270px; /* Espaço para a navbar */
+  padding: 20px;
 }
 
 .main-section {
   background-color: #f9f9f9;
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
 }
 
+/* ---------- CÓDIGO INLINE ---------- */
 code {
   background-color: #e2e2e2;
   padding: 3px 10px;
-  border-radius: 2px;
+  border-radius: 4px;
   font-family: 'Courier New', Courier, monospace;
+  display: inline-block;
 }
 
+/* ---------- BLOCO DE EXEMPLO (EX: LAMPADA) ---------- */
 .lamp {
-  background-color: #f9f9f9;
-  margin: 10px 0; 
+  background-color: #f0f0f0;
+  margin: 20px 0; 
   text-align: center;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-button{
-    background-color: #2fd1f6;
-    color: rgb(30, 30, 30);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+
+/* ---------- BOTÕES ---------- */
+button {
+  background-color: #2fd1f6;
+  color: #1e1e1e;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+  margin: 5px;
 }
+
+button:hover {
+  background-color: #1a9bbd;
+  color: #fff;
+}
+
+/* ---------- BOTÃO CENTRALIZADO (SAIBA MAIS) ---------- */
 .botaosaiba {
   text-align: center;
+  margin-top: 20px;
+}
+
+/* ---------- LINKS DENTRO DO CONTEÚDO PRINCIPAL ---------- */
+#main-doc a {
+  color: #2fd1f6;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#main-doc a:hover {
+  color: #1a9bbd;
+  text-decoration: underline;
+}
+
+/* ---------- RESPONSIVIDADE (MEDIA QUERY) ---------- */
+@media (max-width: 768px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .nav-link {
+    display: inline-block;
+    margin-right: 10px;
+  }
 }

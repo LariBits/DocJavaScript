@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos em JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>JS Documentation</header>
+    <a class="nav-link" href="index.html">Introdução</a>
+    <a class="nav-link" href="eventos.html">Eventos</a>
+    <a class="nav-link" href="funcoes.html">Funções</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Eventos">
+      <header>Eventos</header>
+
+      <p>Eventos são ações que acontecem no navegador enquanto o usuário interage com a página.</p>
+      <p>Com JavaScript, podemos reagir a esses eventos e executar funções quando eles ocorrem.</p>
+      <p>Por exemplo: clicar em um botão, mover o mouse ou pressionar uma tecla.</p>
+
+      <h2>Principais tipos de eventos:</h2>
+      <ul>
+        <li><code>onclick</code> - Quando um elemento é clicado</li>
+        <li><code>onmouseover</code> - Quando o mouse passa por cima</li>
+        <li><code>onkeydown</code> - Quando uma tecla é pressionada</li>
+        <li><code>onload</code> - Quando a página termina de carregar</li>
+        <li><code>onsubmit</code> - Quando um formulário é enviado</li>
+      </ul>
+
+      <h2>Exemplo simples: Alerta ao clicar em um botão:</h2>
+      <button onclick="alert('Você clicou!')">Clique aqui</button>
+
+      <h2>Exemplo com addEventListener:</h2>
+      <button id="btnExemplo">Clique com addEventListener</button>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          document.getElementById("btnExemplo").addEventListener("click", function() {
+            alert("Evento com addEventListener funcionando!");
+          });
+        });
+      </script>
+
+      <p>Eventos permitem criar páginas dinâmicas e interativas.</p>
+
+      <h2>Exemplo de evento de teclado:</h2>
+      <input type="text" placeholder="Digite algo" id="inputTeste">
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          document.getElementById("inputTeste").addEventListener("keydown", function() {
+            console.log("Tecla pressionada!");
+          });
+        });
+      </script>
+
+      <p>Acima, ao digitar, um log aparece no console mostrando que o evento ocorreu.</p>
+
+    </section>
+  </main>
+
+</body>
+</html>
